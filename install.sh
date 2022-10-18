@@ -36,6 +36,13 @@ sudo apt install -y recon-ng
 sudo apt install -y dnsenum
 sudo apt install -y hydra
 sudo apt install -y dirb 
+sudo apt install -y dirb
+sudo apt install -y sqlmap
+sudo apt install -y wfuzz
+sudo apt install -y wpscan
+sudo apt install -y joomscan
+sudo apt install -y commix
+
 
 
 # Sublist3r
@@ -54,3 +61,13 @@ git clone https://github.com/guelfoweb/knock.git
 cd knock
 chmod +x setup.py
 python setup.py install
+
+# XSStrike
+echo -e "${GREEN}[*] Installing XSStrike${NC}"
+cd ~/toolkit
+git clone https://github.com/s0md3v/XSStrike.git 
+cd XSStrike 
+apt-get install -y python3-pip 
+pip3 install -r requirements.txt 
+chmod +x xsstrike.py
+ln -sf ~/toolkit/XSStrike/xsstrike.py /usr/local/bin/xsstrike
