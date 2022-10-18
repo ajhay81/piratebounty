@@ -80,3 +80,17 @@ apt-get install -y python3-pip
 pip3 install -r requirements.txt 
 chmod +x xsstrike.py
 ln -sf ~/toolkit/XSStrike/xsstrike.py /usr/local/bin/xsstrike
+
+# SecLists
+read -p "Do you want to download SecLists? y/n " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo -e "${GREEN}[*] Downloading SecLists${NC}"
+    cd ~/toolkit/wordlists
+    git clone --depth 1 https://github.com/danielmiessler/SecLists.git
+fi
+
+# Cleanup
+echo -e "${GREEN}[*] Tidying up${NC}"
+sudo apt-get clean
