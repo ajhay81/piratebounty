@@ -31,6 +31,7 @@ sudo apt-get install -y nano
 sudo apt-get install -y tmux
 echo -e "${GREEN}[*] Essentials installed${NC}"
 
+echo -e "${GREEN}[*] Installing Tools${NC}"
 sudo apt install -y nmap
 sudo apt install -y recon-ng
 sudo apt install -y dnsenum
@@ -38,11 +39,19 @@ sudo apt install -y hydra
 sudo apt install -y dirb 
 sudo apt install -y dirb
 sudo apt install -y sqlmap
+sudo apt install -y dnsmap
 sudo apt install -y wfuzz
 sudo apt install -y wpscan
 sudo apt install -y joomscan
 sudo apt install -y commix
+sudo apt install -y theharvester
+sudo apt install -y gobuster 
+sudo apt install -y subfinder
+sudo apt install -y whatweb
+sudo apt install -y fierce
 
+
+echo -e "${GREEN}[*] Tools installed${NC}"
 
 
 # Sublist3r
