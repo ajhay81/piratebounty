@@ -30,3 +30,27 @@ sudo apt-get install -y zsh
 sudo apt-get install -y nano
 sudo apt-get install -y tmux
 echo -e "${GREEN}[*] Essentials installed${NC}"
+
+sudo apt install -y nmap
+sudo apt install -y recon-ng
+sudo apt install -y dnsenum
+sudo apt install -y hydra
+sudo apt install -y dirb 
+
+
+# Sublist3r
+echo -e "${GREEN}[*] Installing Sublist3r${NC}"
+cd ~/toolkit 
+git clone https://github.com/aboul3la/Sublist3r.git
+cd Sublist3r/
+pip install -r requirements.txt
+ln -s ~/toolkit/Sublist3r/sublist3r.py /usr/local/bin/sublist3r
+
+# knock
+echo -e "${GREEN}[*] Installing Knockpy${NC}"
+apt-get install -y python-dnspython 
+cd ~/toolkit
+git clone https://github.com/guelfoweb/knock.git
+cd knock
+chmod +x setup.py
+python setup.py install
