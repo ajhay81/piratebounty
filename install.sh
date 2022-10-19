@@ -37,7 +37,6 @@ sudo apt install -y recon-ng
 sudo apt install -y dnsenum
 sudo apt install -y hydra
 sudo apt install -y dirb 
-sudo apt install -y dirb
 sudo apt install -y sqlmap
 sudo apt install -y dnsmap
 sudo apt install -y wfuzz
