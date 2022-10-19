@@ -4,7 +4,7 @@
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-echo -e "${GREEN}[*] Bug Bounty Toolkit Installer${NC}"
+echo -e "${GREEN}[*] Bug and Penetration Toolkit Installer${NC}"
 echo -e "${GREEN}[*] Setting Up Directories${NC}"
 
 echo -e "${GREEN}[*] Installing Essentials${NC}"
@@ -18,7 +18,6 @@ sudo apt-get install -y curl
 sudo apt-get install -y awscli
 sudo apt-get install -y inetutils-ping 
 sudo apt-get install -y make 
-sudo apt-get install -y nmap 
 sudo apt-get install -y whois 
 sudo apt-get install -y python3
 sudo apt-get install -y python-pip 
@@ -48,7 +47,10 @@ sudo apt install -y gobuster
 sudo apt install -y subfinder
 sudo apt install -y whatweb
 sudo apt install -y fierce
-
+sudo apt install -y aircrack-ng
+sudo apt install -y john
+sudo apt install -y nikto
+sudo apt install -y openssh-client
 
 echo -e "${GREEN}[*] Tools installed${NC}"
 
